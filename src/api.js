@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:8000/api";
+const API_URL = "https://app.lssenergysolar.cl/api";
 
 export const getActividades = async () => {
   const response = await axios.get(`${API_URL}/actividades`);
