@@ -42,13 +42,11 @@ export default function AgregarActividad() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-teal-400 p-6">
       <div className="bg-white p-8 rounded-xl shadow-xl w-full max-w-md text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">
-          Agregar Nueva Actividad
-        </h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">Agregar</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Campo para el nombre */}
           <TextField
-            label="Nombre de la Actividad"
+            label="Nombre"
             variant="outlined"
             fullWidth
             value={nombre}
@@ -75,7 +73,7 @@ export default function AgregarActividad() {
             color="primary"
             className="w-full py-3 text-lg"
           >
-            Guardar Actividad
+            Guardar
           </Button>
         </form>
       </div>
