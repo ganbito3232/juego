@@ -8,8 +8,8 @@ export default function Actividades() {
     const fetchActividades = async () => {
       const data = await getActividades();
       // Filtrar solo las actividades con tipo === 1
-      const actividadesFiltradas = data.filter((a) => a.tipo_id === 1);
-
+      const actividadesFiltradas = data.filter((a) => a.tipo_id === "1");
+      console.log("actividadesFiltradas", actividadesFiltradas);
       setActividades(actividadesFiltradas);
     };
 

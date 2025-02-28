@@ -11,7 +11,7 @@ export default function Clasificar() {
     const fetchData = async () => {
       const data = await getActividades();
 
-      const filtrados = data.filter((e) => e.tipo_id == 1);
+      const filtrados = data.filter((e) => e.tipo_id === "1");
       setActividades(filtrados);
     };
     fetchData();

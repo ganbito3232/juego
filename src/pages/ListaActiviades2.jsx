@@ -8,7 +8,7 @@ export default function ListaActiviades2() {
     const fetchActividades = async () => {
       const data = await getActividades();
       // Filtrar solo las actividades con tipo === 1
-      const actividadesFiltradas = data.filter((a) => a.tipo_id === 2);
+      const actividadesFiltradas = data.filter((a) => a.tipo_id === "2");
 
       setActividades(actividadesFiltradas);
     };
